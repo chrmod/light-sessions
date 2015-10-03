@@ -1,23 +1,29 @@
-# Light Sessions (work in progress)
+# Light Sessions
 
-It is a browser extension that keep your open tab in sync across different
-browser/devices without sharing your private data with any 3rd-party.
+It is a browser extension for sharing open tabs via URL.
+
+This is experimental software so please do not expect to much from it :-)
 
 ## How it works
 
-Extensions read your open tabs urls and save them in a form form of **unhosted**
-javascript application in a form of a URL. You can send such URL to any browser
+Extensions read brower open tabs urls and save them in a form of **unhosted**
+javascript application encoded as URL. You can send such URL to any browser
 that have Light Sessions installed to restore your open tabs there.
 
 On browser without Light Sessions extension, the url will simply render tabs
 list as links.
 
+Light Session URL is decoded via extreamly simple website hosted at:
+https://chrmod.github.io/unhostedjs - in this way you are sure no data is
+shared with with 3rd parties.
+
 ## Browser Support
 
-Extension is build with WebExtensions API which is currently supported via:
+Extension is build with WebExtensions APIs so should be supported with all
+edge browser. I've tested it with:
 
-* Chromium (and Google Chrome)
-* Firefox > 44 (or maybe 43, didn't test it yet)
+* Chromium 43
+* Firefox 44
 
 ## Installation
 
