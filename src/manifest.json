@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Light Sessions",
+  "version": "0.0.1",
+
+  "applications": {
+    "gecko": {
+      "id": "lightsessions@chrmod.net"
+    }
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "background": {
+    "scripts": ["background-script.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://chrmod.github.io/unhostedjs/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
