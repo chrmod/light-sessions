@@ -13,9 +13,10 @@ that have Light Sessions installed to restore your open tabs there.
 On browser without Light Sessions extension, the url will simply render tabs
 list as links.
 
-Light Session URL is decoded via extreamly simple website hosted at:
-https://chrmod.github.io/unhostedjs - in this way you are sure no data is
-shared with with 3rd parties.
+Light Session URL is decoded via extreamly simple
+[runtime for unhosted apps](https://github.com/chrmod/unhostedjs) as
+[github page](https://chrmod.github.io/unhostedjs/v1.html) - in this way you
+are sure no data is shared with with 3rd parties.
 
 ## Browser Support
 
